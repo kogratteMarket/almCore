@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<script type='text/javascript' src='jquery.js'></script>
+		<script type='text/javascript' src='almCore.js'></script>
+	</head>
+
+	<body>
+		<script type='text/javascript'>
+		$(function() {
+			$.almCore.setDebug(true);
+			
+			$.almCore.addListener('coreRunned', function() {
+				alert('core has been runned');
+			});
+			$.almCore.addListener();
+			$.almCore.runCore();
+		})
+			
+		</script>
+	</body>
+</html>
